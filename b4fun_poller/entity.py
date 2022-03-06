@@ -23,7 +23,7 @@ class EntityStorageSettings:
     table: str
 
 
-class EntityStorage(metaclass=abs.ABCMeta):
+class EntityStorage(metaclass=abc.ABCMeta):
     """EntityStorage defines the base interface for the entity storage."""
     
     def save_entity(self, entity: Entity):
